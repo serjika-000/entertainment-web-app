@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Dark-Blue, #10141e);
+  font-family: "Outfit", sans-serif;
+}
+
+input {
+  caret-color: #fc4747;
+}
+
+input::placeholder {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+  opacity: 0.5;
+  padding-bottom: 18px;
+}
+
+.searchInput {
+  background: #10141e;
+  outline: none;
+  color: white;
+}
+
+.searchInput::placeholder {
+  font-size: 16px;
+  color: white;
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+.slick-slide {
+  max-width: 250px;
+}
+
+.slick-list {
+  max-width: 550px;
+}
+
+.error {
+  color: #fc4747;
+  font-size: 13px;
+  font-weight: 300;
+  position: absolute;
+  margin-left: 190px;
+  margin-top: -28px;
+}
+
+@media (min-width: 768px) {
+  .slick-list {
+    max-width: 750px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .error {
+    margin-left: 247px;
+  }
+
+  .slick-list {
+    max-width: 1250px;
+  }
+}
